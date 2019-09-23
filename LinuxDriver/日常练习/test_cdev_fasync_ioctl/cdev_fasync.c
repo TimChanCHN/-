@@ -161,7 +161,7 @@ static void __exit cdev_fasync_exit(void)
 	unregister_chrdev_region(g_cdev, COUNT);
 
 	/* 外设资源释放 */
-	free_irq(g_tkey.gpio, (void *)&g_tkey);
+	free_irq(g_tkey.irq, (void *)&g_tkey);
 	gpio_free(g_tkey.gpio);
 }
 
