@@ -7,7 +7,7 @@
 #include <sys/ioctl.h>
 
 
-#define CMD_READ	_IOR('k', 0, int)
+#define CMD_READ		_IOR('k', 0, int)
 #define CMD_WRITE	_IOW('k', 1, char*)
 #define CMD_PRINT	_IO('k', 2)
 
